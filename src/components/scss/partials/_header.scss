@@ -1,0 +1,161 @@
+.header {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  color: black;
+}
+
+.logo {
+  margin-right: auto; /* Pushes the logo to the far left */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px; /* Adds spacing between the links */
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #688fbc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+
+  .social-links {
+    display: flex;
+    align-items: center; /* Align text and icons vertically */
+    gap: 15px; /* Adjust spacing between text and icons */
+
+    p {
+      margin: 0; /* Remove default margin from the paragraph */
+    }
+
+    a img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .login-box {
+    background-color: white;
+    color: #688fbc;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: relative; /* Ensure the close button is positioned relative to the modal box */
+
+      .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #688fbc;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          background-color: #557aa3;
+        }
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        color: #688fbc;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        label {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          font-size: 14px;
+        }
+
+        input {
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+
+        button {
+          background-color: #688fbc;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: bold;
+
+          &:hover {
+            background-color: #557aa3;
+          }
+        }
+      }
+
+      .modal-links {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        a {
+          color: #688fbc;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
