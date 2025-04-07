@@ -1,26 +1,40 @@
-.header {
-  background-color: rgb(255, 255, 255);
-}
-
 .navbar {
   display: flex;
+  justify-content: center; /* Centrerer både logo og menu */
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(255, 255, 255);
-  font-size: 30px;
-  color: black;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
 }
 
-.logo {
-  margin-right: auto; /* Pushes the logo to the far left */
+.logo img {
+  width: 150px; /* Juster logo-størrelsen */
+  margin-right: 20px; /* Skaber lidt afstand mellem logo og menu */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center; /* Centrerer menuen */
+  align-items: center;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  gap: 20px; /* Adds spacing between the links */
+  gap: 30px;
+  font-size: 18px;
+  font-family: "Helvetica", sans-serif;
+  color: #7694ab;
+}
+
+.contact-number {
+  position: absolute;
+  right: 20px; /* Skubber nummeret til højre */
+  font-size: 18px;
+}
+
+.contact-number a {
+  text-decoration: none;
+  color: #333;
 }
 
 .topbar {
