@@ -1,17 +1,24 @@
-import React from 'react';
-
-import Section from '../HOC/Section';
-import Link from '../UI/Link';
-import Mainframe from './Mainframe';
-import Booking from './Booking';
-import FindOs from './FindOs';
+import React from "react";
+import Section from "../HOC/Section";
+import Link from "../UI/Link";
+import Mainframe from "./Mainframe";
+import Booking from "./Booking";
+import FindOs from "./FindOs";
+import Kontakt from "./Kontakt";
+import Kundecases from "./Kundecases";
+import Teamet from "./Teamet";
+import Priser from "./Priser";
 
 function home() {
+  /* Forældre */
   return (
     <>
       <Mainframe />
-      <FindOs /> {/* Tilføjet FindOs komponenten */}
-      {/* Tilføj eventuelt flere komponenter her, f.eks. Booking */}
+      <Priser />
+      <Kontakt />
+      <Kundecases />
+      <Teamet />
+      <FindOs />
     </>
   );
 }

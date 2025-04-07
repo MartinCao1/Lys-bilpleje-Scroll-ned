@@ -1,49 +1,53 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import Booking from './Booking';
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import Booking from "./Booking";
 
 function Mainframe() {
-  const [brand, setBrand] = useState('');
-  const [model, setModel] = useState('');
+  const [brand, setBrand] = useState("");
+  const [model, setModel] = useState("");
 
   return (
     <div>
       {/* Video Section */}
-      <div className='mainframe'>
-        <video autoPlay muted loop className='background-video'>
-          <source src='/bilag/mercedes-video.mp4' type='video/mp4' />
+      <div className="mainframe">
+        <video autoPlay muted loop className="background-video">
+          <source src="/bilag/mercedes-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className='content-overlay'>
+        <div className="content-overlay">
           <h1>Book din tid hos Ly's Bilpleje</h1>
           <h2>Få en gratis prisvurdering</h2>
-          <div className='dropdowns'>
+          <div className="dropdowns">
             <select value={brand} onChange={(e) => setBrand(e.target.value)}>
-              <option value='' disabled>Vælg bilmærke</option>
-              <option value='Toyota'>Toyota</option>
-              <option value='BMW'>BMW</option>
-              <option value='Audi'>Audi</option>
+              <option value="" disabled>
+                Vælg bilmærke
+              </option>
+              <option value="Toyota">Toyota</option>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
             </select>
             <select value={model} onChange={(e) => setModel(e.target.value)}>
-              <option value='' disabled>Vælg model</option>
-              <option value='Model A'>Model A</option>
-              <option value='Model B'>Model B</option>
-              <option value='Model C'>Model C</option>
+              <option value="" disabled>
+                Vælg model
+              </option>
+              <option value="Model A">Model A</option>
+              <option value="Model B">Model B</option>
+              <option value="Model C">Model C</option>
             </select>
             {brand && model ? (
               <Link
-                to='booking-section'
+                to="booking-section"
                 smooth={true}
                 duration={500}
                 offset={-50}
-                className='navigate-button'
+                className="navigate-button"
               >
                 Se estimeret pris
               </Link>
             ) : (
               <button
-                onClick={() => alert('Vælg både bilmærke og model')}
-                className='navigate-button'
+                onClick={() => alert("Vælg både bilmærke og model")}
+                className="navigate-button"
               >
                 Se estimeret pris
               </button>

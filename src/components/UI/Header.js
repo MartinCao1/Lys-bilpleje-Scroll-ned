@@ -1,14 +1,14 @@
-import React from 'react';
-import Nav from './Nav';
-import TopBar from './TopBar';
+import React from "react";
+import Nav from "./Nav";
+import TopBar from "./TopBar";
 
-
-const header = () => {
+const Header = () => {
   return (
-    <div className='header'>
+    <div className="header">
+      <TopBar /> {/* Tilføjet TopBar */}
       <Nav />
     </div>
   );
 };
 
-export default header;
+export default Header;
