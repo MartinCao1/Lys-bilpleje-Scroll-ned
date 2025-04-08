@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Booking({ brand, model }) {
+  /* Child */
   const [service, setService] = useState("");
   const [price, setPrice] = useState("0 kr");
   const [userInfo, setUserInfo] = useState({
@@ -79,7 +80,7 @@ function Booking({ brand, model }) {
           </div>
         ))}
       </div>
-      <h3>Estimeret pris: {price}</h3>
+      <h3>Estimeret pris: {price} 🏷️</h3>
       <form className="contact-form">
         <h2>Indtast dine oplysninger</h2>
         <label>
