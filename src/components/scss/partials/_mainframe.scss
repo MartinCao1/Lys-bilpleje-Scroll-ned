@@ -1,89 +1,132 @@
 .mainframe {
-  position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-
-  .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75%;
-    object-fit: cover;
-    z-index: -1;
-  }
-
-  .content-overlay {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h1,
-    .dropdowns,
-    button {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .dropdowns {
-      display: inline-flex;
-      gap: 10px;
-      margin-bottom: 20px;
-
-      select {
-        padding: 10px;
-        font-size: 1rem;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #0056b3;
-      }
-    }
-  }
+  min-height: 100vh;
 }
 
-.navigate-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; // Ensures the video stays behind other content
+}
+
+.content-overlay {
+  position: relative;
   text-align: center;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #0056b3;
-  }
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20%;
+  // padding-left: 40%;
 }
 
-#booking-section {
-  padding: 50px 20px;
-  background-color: #f8f9fa;
+.content-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
+
+.content-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.dropdowns {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+// .mainframe {
+//   position: relative;
+//   width: 100%;
+//   height: 100vh;
+//   overflow: hidden;
+
+//   .background-video {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 75%;
+//     object-fit: cover;
+//     z-index: -1;
+//   }
+
+//   .content-overlay {
+//     position: relative;
+//     text-align: center;
+//     color: white;
+//     padding: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     h1,
+//     .dropdowns,
+//     button {
+//       display: inline-block;
+//       margin: 0 10px;
+//     }
+
+//     h1 {
+//       font-size: 2.5rem;
+//       margin-bottom: 20px;
+//     }
+
+//     .dropdowns {
+//       display: inline-flex;
+//       gap: 10px;
+//       margin-bottom: 20px;
+
+//       select {
+//         padding: 10px;
+//         font-size: 1rem;
+//         border-radius: 5px;
+//         border: 1px solid #ccc;
+//       }
+//     }
+
+//     button {
+//       padding: 10px 20px;
+//       font-size: 1rem;
+//       color: white;
+//       background-color: #007bff;
+//       border: none;
+//       border-radius: 5px;
+//       cursor: pointer;
+//       transition: background-color 0.3s;
+
+//       &:hover {
+//         background-color: #0056b3;
+//       }
+//     }
+//   }
+// }
+
+// .navigate-button {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   font-size: 1rem;
+//   color: white;
+//   background-color: #007bff;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   text-decoration: none;
+//   text-align: center;
+//   transition: background-color 0.3s;
+
+//   &:hover {
+//     background-color: #0056b3;
+//   }
+// }
+
+// #booking-section {
+//   padding: 50px 20px;
+//   background-color: #f8f9fa;
+// }
