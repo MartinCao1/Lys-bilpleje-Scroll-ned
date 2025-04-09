@@ -6,7 +6,7 @@ function Priser() {
   const navigate = useNavigate();
 
   const handleVaeglPakkeClick = (pakkeNavn) => {
-    navigate(`/tillaeg/${pakkeNavn}`);
+    navigate(`/tilvalg/${pakkeNavn}`);
   };
 
   return (
