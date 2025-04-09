@@ -21,7 +21,9 @@ function Nav() {
           <Link to="/findos">Find Os</Link>
         </li>
         <li>
-          <button className="btn">Kontakt</button>
+          <Link to="/kontakt" className="btn">
+            Kontakt
+          </Link>
         </li>
       </ul>
     </nav>
