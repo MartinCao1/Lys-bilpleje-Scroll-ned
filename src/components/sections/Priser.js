@@ -1,57 +1,68 @@
 import React from "react";
+import "../scss/partials/_priser.scss";
+import { useNavigate } from 'react-router-dom';
 
 function Priser() {
+  const navigate = useNavigate();
+
+  const handleVaeglPakkeClick = (pakkeNavn) => {
+    navigate(`/tillaeg/${pakkeNavn}`);
+  };
+
   return (
-    <div className="priser-page">
-      <h1>Vores Priser</h1>
-      <p>
-        Her kan du se vores vejledende priser for de mest populære bilpleje
-        services. Kontakt os for et præcist tilbud på din specifikke bil og
-        behov.
-      </p>
+    <div className="prispakker-container">
 
-      <div className="price-list">
-        <div className="price-item">
-          <h3>Hele bilen - Komplet Rengøring og Polering</h3>
-          <p>Fra: 2000 kr</p>
-          <p>
-            Inkluderer: Indvendig rengøring, udvendig vask, polering af lak.
-          </p>
-          {/* Evt. mere detaljer */}
-        </div>
-
-        <div className="price-item">
-          <h3>Kun indvendigt</h3>
-          <p>Fra: 1000 kr</p>
-          <p>
-            Inkluderer: Støvsugning, rengøring af overflader, vinduespolering
-            indvendigt.
-          </p>
-          {/* Evt. mere detaljer */}
-        </div>
-
-        <div className="price-item">
-          <h3>Kun udvendigt</h3>
-          <p>Fra: 800 kr</p>
-          <p>Inkluderer: Vask, tørring, rudepolering udvendigt.</p>
-          {/* Evt. mere detaljer */}
-        </div>
-
-        <div className="price-item">
-          <h3>Polering</h3>
-          <p>Fra: 1500 kr</p>
-          <p>Fjerner ridser og giver lakken glans.</p>
-          {/* Evt. mere detaljer om typer af polering */}
-        </div>
-
-        {/* Tilføj flere priser og services her */}
+      <div className="prispakke-boks bronze">
+        <h3>Bronze Pakke</h3>
+        <p className="beskrivelse">
+          Grundlæggende rengøring af bilen. Perfekt til vedligeholdelse.
+        </p>
+        <ul className="inkluderet">
+          <li>Udvendig vask</li>
+          <li>Støvsugning af kabine</li>
+          <li>Rens af måtter</li>
+        </ul>
+        <p className="pris">
+          Fra: <span>1.295</span>,-
+        </p>
+        <button onClick={() => handleVaeglPakkeClick("bronze")}>Vælg pakke</button>
       </div>
 
-      <p>
-        Bemærk: Priserne er vejledende og kan variere afhængigt af bilens
-        størrelse og tilstand.
-      </p>
-      <p>Kontakt os for et uforpligtende tilbud!</p>
+      <div className="prispakke-boks guld">
+        <h3>Guld Pakke</h3>
+        <p className="beskrivelse">
+          Udvidet rengøring og pleje. Inkluderer polering for øget glans.
+        </p>
+        <ul className="inkluderet">
+          <li>Udvendig vask</li>
+          <li>Støvsugning af kabine</li>
+          <li>Rens af måtter og sæder</li>
+          <li>Let polering af lak</li>
+        </ul>
+        <p className="pris">
+          Fra: <span>2.495</span>,-
+        </p>
+        <button onClick={() => handleVaeglPakkeClick("guld")}>Vælg pakke</button>
+      </div>
+
+      <div className="prispakke-boks diamant">
+        <h3>Diamant Pakke</h3>
+        <p className="beskrivelse">
+          Komplet luksusbehandling. Inkluderer dybderens, polering og lakforsegling.
+        </p>
+        <ul className="inkluderet">
+          <li>Udvendig vask</li>
+          <li>Dybderens af kabine</li>
+          <li>Rens og pleje af læder/stof</li>
+          <li>Avanceret polering af lak</li>
+          <li>Lakforsegling for langvarig beskyttelse</li>
+        </ul>
+        <p className="pris">
+          Fra: <span>3.995</span>,-
+        </p>
+        <button onClick={() => handleVaeglPakkeClick("diamant")}>Vælg pakke</button>
+      </div>
+
     </div>
   );
 }

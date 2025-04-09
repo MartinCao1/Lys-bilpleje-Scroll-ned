@@ -22,3 +22,62 @@ nav ul li {
   margin: 5px 20px;
   font-size: 16px;
 }
+
+.dropdown-title {
+  display: inline-flex;
+  align-items: center;
+  position: relative; /* Nødvendig for at positionere pseudo-element absolut */
+  padding-right: 1rem; /* Giver plads til pilen */
+}
+
+.dropdown-title::after {
+  content: '\203A'; /* Unicode for en smal, højrevendt pil (›) */
+  font-size: 0.8em;
+  margin-left: 0.3rem;
+  transition: transform 0.2s ease-in-out; /* For en smooth rotation */
+}
+
+/* Roter pilen nedad ved hover over .dropdown */
+.dropdown:hover .dropdown-title::after {
+  transform: rotate(90deg); /* Roter 90 grader med uret for at pege nedad */
+}
+
+.dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.9); /* Baggrund med let gennemsigtighed */
+  padding: 0; /* Fjern padding fra selve ul'en, padding sættes på li > a */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001; /* Sørg for at dropdown-menuen er øverst */
+  transition: visibility 0s, opacity 0.2s ease-in-out; /* Smooth transition */
+  min-width: 200px; /* Sæt en minimum bredde for at kontrollere bredden */
+  border-radius: 5px; /* Tilføj afrundede hjørner. Juster værdien efter behov */
+}
+
+/* Vis dropdown-menuen, når musen er over teamet */
+.dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Style for linket INDENI hvert listeelement */
+.dropdown-menu li a {
+  display: block; /* Sikrer at hele li-elementet er klikbart og fyldt med farve */
+  padding: 0.75rem 1rem; /* Justeret lodret padding (top og bund) */
+  color: #333; /* Sæt standard tekstfarve */
+  text-decoration: none; /* Fjern understregning */
+}
+
+/* Style for linket INDENI hvert listeelement ved hover */
+.dropdown-menu li a:hover {
+  background-color: #7694ab;
+  color: white; /* Skift tekstfarve ved hover for bedre kontrast */
+}
+
+.dropdown {
+  position: relative; /* Sikrer at dropdown-menuen er positioneret relativt til dette element */
+}
