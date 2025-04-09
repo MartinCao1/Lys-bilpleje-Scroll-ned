@@ -1,0 +1,166 @@
+$primary-color: #007bff;
+$secondary-color: #28a745;
+$text-color: #333;
+$light-bg: #f7f7f7;
+$border-color: #ccc;
+$box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+$font-stack: sans-serif;
+
+.kontakt-os-page {
+  padding: 40px;
+  font-family: $font-stack;
+  color: $text-color;
+  background-color: $light-bg;
+}
+
+.kontakt-banner {
+  background-color: $primary-color;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.kontakt-form-section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  .kontakt-form {
+    display: grid;
+    gap: 20px;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: darken($text-color, 20%);
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        padding: 12px;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        font-size: 1em;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    }
+
+    .send-besked-btn {
+      background-color: $secondary-color;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+}
+
+.kontakt-info-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  .kontakt-info {
+    display: grid;
+    gap: 20px;
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      i {
+        font-size: 1.5em;
+        color: $primary-color;
+      }
+
+      p {
+        line-height: 1.6;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* Responsivt design */
+@media (max-width: 768px) {
+  .kontakt-banner {
+    padding: 30px;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  .kontakt-form-section .kontakt-form {
+    grid-template-columns: 1fr;
+  }
+
+  .kontakt-info-section .kontakt-info {
+    grid-template-columns: 1fr;
+
+    .info-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

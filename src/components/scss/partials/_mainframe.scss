@@ -10,7 +10,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; // Ensures the video stays behind other content
+  z-index: 0; /* Sørg for at videoen er nederst */
 }
 
 .content-overlay {
@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 20%;
-  // padding-left: 40%;
+  z-index: 1;  /* Sørg for, at overlays er over videoen */
 }
 
 .content-overlay h1 {

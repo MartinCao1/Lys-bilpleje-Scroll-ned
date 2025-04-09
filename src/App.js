@@ -7,6 +7,10 @@ import Mainframe from "./components/sections/Mainframe";
 import Priser from "./components/sections/Priser";
 import Kundecases from "./components/sections/Kundecases";
 import Teamet from "./components/sections/Teamet";
+import HvadKunderSiger from "./components/sections/HvadKunderSiger";
+import FAQ from "./components/sections/Faq";
+import Omos from "./components/sections/Omos";
+import Tilvalg from "./components/sections/Tilvalg"; // Korrekt import navn
 
 import Nav from "./components/UI/Nav";
 import Footer from "./components/UI/Footer";
@@ -25,6 +29,11 @@ function App() {
           <Route path="/mainframe" element={<Mainframe />} />
           <Route path="/priser" element={<Priser />} />
           <Route path="/kundecases" element={<Kundecases />} />
+          <Route path="/hvadkundersiger" element={<HvadKunderSiger />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/omos" element={<Omos />} />
+          {/* Korrekt rute navn */}
+          <Route path="/tilvalg/:pakkenavn" element={<Tilvalg />} />
         </Routes>
         <Footer />
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import "../scss/partials/_kontakt.scss"; // global styling – ikke CSS Module
 
 function Kontakt() {
   return (
@@ -40,27 +41,25 @@ function Kontakt() {
         <h2>Vores Kontaktoplysninger</h2>
         <div className="kontakt-info">
           <div className="info-item">
-            <i className="fas fa-map-marker-alt"></i>{" "}
-            {/* Font Awesome ikon (husk at tilføje bibliotek) */}
+            <i className="fas fa-map-marker-alt"></i>
             <p>
               <strong>Adresse:</strong> [Din Adresse Her], Odense, Danmark
             </p>
           </div>
           <div className="info-item">
-            <i className="fas fa-phone"></i> {/* Font Awesome ikon */}
+            <i className="fas fa-phone"></i>
             <p>
               <strong>Telefon:</strong>{" "}
               <a href="tel:+4552637247">+45 52 63 72 47</a>
             </p>
           </div>
           <div className="info-item">
-            <i className="fas fa-envelope"></i> {/* Font Awesome ikon */}
+            <i className="fas fa-envelope"></i>
             <p>
               <strong>Email:</strong>{" "}
               <a href="mailto:[Din Email Her]">[Din Email Her]</a>
             </p>
           </div>
-          {/* Tilføj eventuelt åbningstider her */}
         </div>
       </div>
     </div>
