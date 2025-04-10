@@ -12,6 +12,7 @@ import FAQ from "./components/sections/Faq";
 import Omos from "./components/sections/Omos";
 import Tilvalg from "./components/sections/Tilvalg"; // Korrekt import navn
 import PoleringPriser from "./components/sections/Poleringpriser";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import Nav from "./components/UI/Nav";
 import Footer from "./components/UI/Footer";
