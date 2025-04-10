@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Kontakt() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Deaktiver scrolling, hvis vi er på kontaktsiden
+    if (location.pathname === "/kontakt") {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto"; // Gendan scrolling på andre sider
+    }
+
+    // Ryd op, når komponenten unmountes
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [location.pathname]);
+
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -39,8 +56,8 @@ function Kontakt() {
         <p>
           Vi er altid klar til at hjælpe! Hvis du har spørgsmål eller ønsker at
           komme i kontakt, så tøv ikke med at række ud. Det er helt uforpligtet.
-          Oplysninger om bilen er ikke nødvendige, men det vil kunne gøre hele
-          processen lettere og hurtigere.
+          Oplysninger om bilen i kontaktformularen er ikke et must, men det vil
+          gøre hele processen lettere og hurtigere.
         </p>
         <p>
           Udfyld formularen, og vi vil ringe dig op – helt{" "}
@@ -50,15 +67,21 @@ function Kontakt() {
         <ul>
           <li>
             <img src="/bilag/contact-mail.svg" alt="" />
-            LysBilpleje@gmail.com
+            <a href="mailto:LysBilpleje@gmail.com">LysBilpleje@gmail.com</a>
           </li>
           <li>
             <img src="/bilag/contact-phone.svg" alt="" />
-            +45 50136496
+            <a href="tel:+4550136496">+45 50136496</a>
           </li>
           <li>
             <img src="/bilag/contact-location.svg" alt="" />
-            Andrup Vej 7, Esbjerg Ø
+            <a
+              href="https://www.google.com/maps?q=Andrup+Vej+7,+Esbjerg+Ø"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Andrup Vej 7, Esbjerg Ø
+            </a>
           </li>
         </ul>
       </div>

@@ -12,7 +12,6 @@ function home() {
     <>
       <Mainframe />
       <Priser />
-      <Kontakt />
       <FindOs />
     </>
   );
