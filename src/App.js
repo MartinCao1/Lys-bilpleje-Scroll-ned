@@ -11,6 +11,7 @@ import HvadKunderSiger from "./components/sections/HvadKunderSiger";
 import FAQ from "./components/sections/Faq";
 import Omos from "./components/sections/Omos";
 import Tilvalg from "./components/sections/Tilvalg"; // Korrekt import navn
+import PoleringPriser from "./components/sections/Poleringpriser";
 
 import Nav from "./components/UI/Nav";
 import Footer from "./components/UI/Footer";
@@ -34,6 +35,7 @@ function App() {
           <Route path="/omos" element={<Omos />} />
           {/* Korrekt rute navn */}
           <Route path="/tilvalg/:pakkenavn" element={<Tilvalg />} />
+          <Route path="/poleringpriser" element={<PoleringPriser />} />
         </Routes>
         <Footer />
       </div>

@@ -1,0 +1,90 @@
+.polering-priser-container {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .polering-pris-boks {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: left;
+
+    h3 {
+      color: #007bff;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .beskrivelse {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .inkluderet {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 15px;
+
+      li {
+        color: #555;
+        padding-left: 1.2em;
+        position: relative;
+        margin-bottom: 5px;
+
+        &::before {
+          content: "✓";
+          color: #28a745;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+
+    .pris {
+      font-size: 1.2em;
+      color: #28a745;
+      font-weight: bold;
+    }
+  }
+
+  .kontakt-os {
+    margin-top: 30px;
+    color: #666;
+    font-style: italic;
+
+    .kontakt-link {
+      color: #007bff; /* En fremhævet farve */
+      font-weight: bold;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+}
+
+.kontakt-os {
+  /* Du havde denne stående uden for .polering-priser-container */
+  margin-top: 30px;
+  color: #666;
+  font-style: italic;
+}
