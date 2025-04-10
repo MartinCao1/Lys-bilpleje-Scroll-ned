@@ -1,12 +1,16 @@
+.prispakker-side {
+  // Du kan tilføje generel styling til prissiden her, hvis nødvendigt
+}
+
 .prispakker-container {
   display: flex;
   gap: 20px;
   justify-content: space-around;
-  padding: 40px 20px; 
-  background-color: #1d84df; 
-  max-width: 1200px; 
-  margin: 20px auto; 
-  border-radius: 8px; 
+  padding: 40px 20px;
+  background-color: #1d84df;
+  max-width: 1200px;
+  margin: 20px auto 30px auto; /* Justeret margin for at give plads over og under samt bundmargin før polering */
+  border-radius: 8px;
 }
 
 .prispakke-boks {
@@ -15,7 +19,7 @@
   text-align: left;
   width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
   transition: border 0.3s ease;
 
   h3 {
@@ -90,14 +94,110 @@
   }
 
   &.bronze {
-    border: 2px solid #CD7F32; 
+    border: 2px solid #cd7f32;
   }
 
   &.guld {
-    border: 2px solid #FFD700; 
+    border: 2px solid #ffd700;
   }
 
   &.diamant {
-    border: 2px solid #B9F2FF; 
+    border: 2px solid #b9f2ff;
+  }
+}
+
+.polering-display {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Samme max-width som containeren */
+  margin-top: 30px; /* Giver lidt afstand til andet indhold */
+  border-radius: 8px;
+  overflow: hidden; /* Sikrer at baggrundsfarven på intro afrundes */
+  background-color: #f9f9f9; /* Tilføj en baggrundsfarve til hele sektionen */
+  padding: 20px; /* Tilføj lidt indvendig padding */
+  box-sizing: border-box; /* Sikrer at padding ikke øger bredden */
+}
+
+.polering-intro {
+  width: 50%; /* Billedet fylder halvdelen */
+  padding-right: 20px; /* Giver afstand til priserne */
+  box-sizing: border-box;
+}
+
+.bil-billede {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Afrund billedet */
+}
+
+.polering-priser-side {
+  width: 50%; /* Priserne fylder den anden halvdel */
+  padding-left: 20px; /* Giver afstand til billedet */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Placer priser og knap under hinanden */
+  justify-content: flex-start; /* Start justering fra toppen */
+}
+
+.polering-priser-side h2 {
+  color: #333; /* Mørk, neutral farve for overskriften */
+  font-size: 1.8em; /* Større skriftstørrelse for at fremhæve overskriften */
+  font-weight: 500; /* Lettere end bold, men stadig fremtrædende */
+  margin-top: 0;
+  margin-bottom: 10px; /* Mindre margin under overskriften */
+  letter-spacing: -0.02em; /* Let negativ letter-spacing for et tættere, mere moderne look */
+}
+
+.polering-priser-side .polering-intro-text {
+  color: #777; /* Lysere, mere subtil farve for underteksten */
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Mere margin under underteksten for at skabe afstand til prisboksene */
+  font-weight: 300; /* Tyndere skriftvægt for at adskille den fra overskriften */
+}
+
+.polering-pris-boks {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.polering-pris-boks:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.polering-pris-boks h3 {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.polering-pris-boks .pris {
+  font-size: 1.1em;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.polering-priser-side .se-polering-pris-knap-container {
+  margin-top: 20px;
+}
+
+.polering-priser-side .se-polering-pris-knap {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
   }
 }
