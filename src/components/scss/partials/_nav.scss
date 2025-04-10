@@ -2,6 +2,7 @@ nav {
   width: 100%;
   // background: #333;
   color: white;
+  font-weight: 700;
   padding: 4px 0;
   position: fixed;
   top: 0;
@@ -22,7 +23,27 @@ nav ul li {
   margin: 5px 20px;
   font-size: 16px;
 }
+nav ul li a {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s;
+  border-radius: 5px; 
+}
 
+nav ul li a:hover {
+  background-color: #6585bf;
+}
+
+nav ul li .btn:hover {
+  background-color: #f5f5f5; /* Baggrundsfarve ved hover */
+  color: #212121; /* Tekstfarve ved hover */
+}
+
+.dark-nav {
+  background: #557cc3;
+  transition: 0.5s;
+}
 .dropdown-title {
   display: inline-flex;
   align-items: center;
@@ -31,7 +52,7 @@ nav ul li {
 }
 
 .dropdown-title::after {
-  content: '\203A'; /* Unicode for en smal, højrevendt pil (›) */
+  content: "\203A"; /* Unicode for en smal, højrevendt pil (›) */
   font-size: 0.8em;
   margin-left: 0.3rem;
   transition: transform 0.2s ease-in-out; /* For en smooth rotation */
@@ -49,7 +70,12 @@ nav ul li {
   top: 100%;
   left: 0;
   list-style: none;
-  background-color: rgba(255, 255, 255, 0.9); /* Baggrund med let gennemsigtighed */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Baggrund med let gennemsigtighed */
   padding: 0; /* Fjern padding fra selve ul'en, padding sættes på li > a */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1001; /* Sørg for at dropdown-menuen er øverst */
