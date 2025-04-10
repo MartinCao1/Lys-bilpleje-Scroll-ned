@@ -1,8 +1,5 @@
 import React from "react";
-import Section from "../HOC/Section";
-import Link from "../UI/Link";
 import Mainframe from "./Mainframe";
-import Booking from "./Booking";
 import FindOs from "./FindOs";
 import Kontakt from "./Kontakt";
 import Kundecases from "./Kundecases";
@@ -16,8 +13,6 @@ function home() {
       <Mainframe />
       <Priser />
       <Kontakt />
-      <Kundecases />
-      <Teamet />
       <FindOs />
     </>
   );
