@@ -1,63 +1,135 @@
 .prispakker-side {
-  // Du kan tilføje generel styling til prissiden her, hvis nødvendigt
+  // tilføj generel styling til prissiden her, hvis nødvendigt
+}
+
+.priser-intro-section {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.priser-intro-section h1 {
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.priser-intro-section .intro-text {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.priser-intro-section .overordnet-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.priser-intro-section .book-tid-knap {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+  font-weight: 500;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+
+.priser-intro-section .eller {
+  color: #777;
+  font-size: 1em;
 }
 
 .prispakker-container {
   display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  padding: 40px 20px;
-  background-color: #1d84df;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f4f7f6;
   max-width: 1200px;
-  margin: 20px auto 30px auto; /* Justeret margin for at give plads over og under samt bundmargin før polering */
-  border-radius: 8px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .prispakke-boks {
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 30px;
   text-align: left;
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  background-color: #f9f9f9;
-  transition: border 0.3s ease;
+  width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
 
   h3 {
-    color: #333;
+    color: #2c3e50;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.7em;
+    font-weight: 600;
   }
 
   .beskrivelse {
-    color: #666;
-    margin-bottom: 15px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
   }
 
   .inkluderet {
     list-style: none;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     li {
-      color: #555;
-      padding-left: 1.2em;
+      color: #333;
+      padding-left: 1.5em;
       position: relative;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      font-size: 1.05em;
 
-      &::before {
-        content: "✓";
-        color: #007bff;
+      .ikon {
+        color: #2ecc71;
         position: absolute;
         left: 0;
+        top: 2px;
+        margin-right: 5px;
+      }
+
+      &::before {
+        content: "";
       }
     }
   }
 
   .pris {
-    font-size: 1.2em;
-    color: #28a745;
-    margin-bottom: 15px;
-    padding: 5px;
+    font-size: 1.5em;
+    color: #27ae60;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: #e6f9e9;
+    border-radius: 6px;
+    display: inline-block;
 
     span {
       font-weight: bold;
@@ -66,138 +138,153 @@
 
   button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #3498db;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.1em;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: 500;
 
     &:hover {
-      background-color: #0056b3;
+      background-color: #2980b9;
     }
   }
 
   a {
     display: block;
-    color: #007bff;
+    color: #3498db;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
     cursor: pointer;
+    font-weight: 500;
   }
 
   &.bronze {
-    border: 2px solid #cd7f32;
+    border-color: #cd7f32;
   }
 
   &.guld {
-    border: 2px solid #ffd700;
+    border-color: #ffd700;
   }
 
   &.diamant {
-    border: 2px solid #b9f2ff;
+    border-color: #b9f2ff;
   }
 }
 
 .polering-display {
   display: flex;
   width: 100%;
-  max-width: 1200px; /* Samme max-width som containeren */
-  margin-top: 30px; /* Giver lidt afstand til andet indhold */
-  border-radius: 8px;
-  overflow: hidden; /* Sikrer at baggrundsfarven på intro afrundes */
-  background-color: #f9f9f9; /* Tilføj en baggrundsfarve til hele sektionen */
-  padding: 20px; /* Tilføj lidt indvendig padding */
-  box-sizing: border-box; /* Sikrer at padding ikke øger bredden */
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  align-items: center;
 }
 
 .polering-intro {
-  width: 50%; /* Billedet fylder halvdelen */
-  padding-right: 20px; /* Giver afstand til priserne */
+  width: 50%;
+  padding-right: 30px;
   box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 730px;
 }
 
 .bil-billede {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Afrund billedet */
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  object-fit: cover;
+  object-position: top center;
 }
 
 .polering-priser-side {
-  width: 50%; /* Priserne fylder den anden halvdel */
-  padding-left: 20px; /* Giver afstand til billedet */
+  width: 50%;
+  padding-left: 30px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column; /* Placer priser og knap under hinanden */
-  justify-content: flex-start; /* Start justering fra toppen */
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
 }
 
 .polering-priser-side h2 {
-  color: #333; /* Mørk, neutral farve for overskriften */
-  font-size: 1.8em; /* Større skriftstørrelse for at fremhæve overskriften */
-  font-weight: 500; /* Lettere end bold, men stadig fremtrædende */
+  color: #2c3e50;
+  font-size: 2em;
+  font-weight: 600;
   margin-top: 0;
-  margin-bottom: 10px; /* Mindre margin under overskriften */
-  letter-spacing: -0.02em; /* Let negativ letter-spacing for et tættere, mere moderne look */
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
 }
 
 .polering-priser-side .polering-intro-text {
-  color: #777; /* Lysere, mere subtil farve for underteksten */
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 20px; /* Mere margin under underteksten for at skabe afstand til prisboksene */
-  font-weight: 300; /* Tyndere skriftvægt for at adskille den fra overskriften */
+  color: #777;
+  font-size: 1.15em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-weight: 400;
 }
 
 .polering-pris-boks {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   margin-bottom: 10px;
-}
 
-.polering-pris-boks:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
-.polering-pris-boks h3 {
-  color: #007bff;
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 1em;
-}
+  h3 {
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
 
-.polering-pris-boks .pris {
-  font-size: 1.1em;
-  color: #28a745;
-  font-weight: bold;
-  margin-bottom: 0;
+  .pris {
+    font-size: 1.3em;
+    color: #27ae60;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
 }
 
 .polering-priser-side .se-polering-pris-knap-container {
-  margin-top: 20px;
+  text-align: left;
 }
 
 .polering-priser-side .se-polering-pris-knap {
-  background-color: #007bff;
+  background-color: #2ecc71;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.1em;
   transition: background-color 0.3s ease;
+  font-weight: 500;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #27ae60;
   }
 }
