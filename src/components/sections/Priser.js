@@ -19,7 +19,7 @@ function Priser() {
     <div className="prispakker-side">
       {/* NY INTRODUKTION SEKTION START */}
       <div className="priser-intro-section">
-        <h1>Vores Priser og Poleringsmuligheder</h1>
+        <h1>Vores priser og poleringsmuligheder</h1>
         <p className="intro-text">
           Hos Ly´s bilpleje tilbyder vi gennemsigtige priser og skræddersyede
           løsninger til at holde din bil i topform. Uanset om du har brug for en

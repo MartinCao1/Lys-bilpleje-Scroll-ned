@@ -1,58 +1,57 @@
-.prispakker-side {
-  // tilføj generel styling til prissiden her, hvis nødvendigt
-}
-
 .priser-intro-section {
-  text-align: center;
-  padding: 40px 20px;
-  margin-bottom: 40px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  text-align: center; /* CENTRERER AL TEKST INDENI */
+  padding: 80px 20px;
+  margin-bottom: 60px;
+  background-color: transparent; /* Ingen baggrundsfarve på sektionen */
+  border-radius: 0;
+  max-width: 1200px; /* Behold max bredde for centrering af sektionen */
+  margin-left: auto; /* Centrerer SEKTIONEN horisontalt */
+  margin-right: auto; /* Centrerer SEKTIONEN horisontalt */
 }
 
 .priser-intro-section h1 {
-  color: #2c3e50;
-  font-size: 2.5em;
-  margin-bottom: 15px;
+  color: #00bcd4; /* Behold den blå farve */
+  font-size: 3em;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 
 .priser-intro-section .intro-text {
-  color: #555;
-  font-size: 1.1em;
-  line-height: 1.7;
-  margin-bottom: 30px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  color: #555; /* Brug en mørk grå farve til brødteksten */
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 900px; /* Behold max bredde for teksten */
+  margin-left: auto; /* Centrerer teksten inden for sin max-width */
+  margin-right: auto; /* Centrerer teksten inden for sin max-width */
 }
 
 .priser-intro-section .overordnet-cta {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  justify-content: center; /* Centrerer knappen */
 }
 
 .priser-intro-section .book-tid-knap {
   display: inline-block;
   background-color: #3498db;
   color: white;
-  padding: 12px 25px;
+  padding: 15px 30px;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
 
-  &:hover {
-    background-color: #2980b9;
-  }
+.priser-intro-section .book-tid-knap:hover {
+  background-color: #2980b9;
 }
 
 .priser-intro-section .eller {
-  color: #777;
-  font-size: 1em;
+  display: none;
 }
 
 .prispakker-container {
