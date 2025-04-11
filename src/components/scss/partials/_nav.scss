@@ -108,3 +108,7 @@ nav ul li .btn:hover {
 .dropdown {
   position: relative; /* Sikrer at dropdown-menuen er positioneret relativt til dette element */
 }
+
+.mobile-nav {
+  display: none; /* Skjul mobilnav i desktop visning */
+}

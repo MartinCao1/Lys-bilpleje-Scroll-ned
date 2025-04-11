@@ -9,7 +9,7 @@ function Mainframe() {
   return (
     <div className="mainframe">
       <video autoPlay muted loop className="background-video">
-        <source src="/bilag/mainframe-video.mp4" type="video/mp4" />
+        <source src="/bilag/tesla-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="content-overlay">
