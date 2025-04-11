@@ -4,14 +4,17 @@ import FindOs from "./FindOs";
 import Kontakt from "./Kontakt";
 import Kundecases from "./Kundecases";
 import Teamet from "./Teamet";
-import Priser from "./Priser";
+import ProcessSektion from "./ProcessSektion"; // Import den nye komponent
+import PristilbudForside from "./PristilbudForside";
 
 function home() {
   /* Forældre */
   return (
     <>
       <Mainframe />
-      <Priser />
+      <ProcessSektion />{" "}
+      {/* Tilføj ProcessSektion her, hvor du ønsker den vist */}
+      <PristilbudForside />
       <FindOs />
     </>
   );

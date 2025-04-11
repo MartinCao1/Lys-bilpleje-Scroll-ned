@@ -1,0 +1,42 @@
+.pristilbud-forside {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .pristilbud-forside .prispakker-container {
+    justify-content: center;
+  }
+
+  .se-alle-pakker {
+    margin-top: 30px;
+
+    .se-alle-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
