@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import Booking from "./Booking";
 
 function Mainframe() {
   const [brand, setBrand] = useState("");

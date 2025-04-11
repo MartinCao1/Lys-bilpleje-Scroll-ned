@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/sections/Home";
-import Booking from "./components/sections/Booking";
-import FindOs from "./components/sections/FindOs";
-import Kontakt from "./components/sections/Kontakt";
-import Mainframe from "./components/sections/Mainframe";
-import Priser from "./components/sections/Priser";
-import Kundecases from "./components/sections/Kundecases";
-import Teamet from "./components/sections/Teamet";
-import HvadKunderSiger from "./components/sections/HvadKunderSiger";
-import FAQ from "./components/sections/Faq";
-import Omos from "./components/sections/Omos";
-import Tilvalg from "./components/sections/Tilvalg"; // Korrekt import navn
-import PoleringPriser from "./components/sections/Poleringpriser";
+import Home from "./components/pages/home/Home";
+import Booking from "./components/pages/Booking";
+import FindOs from "./components/pages/home/FindOs";
+import Kontakt from "./components/pages/Kontakt";
+import Mainframe from "./components/pages/home/Mainframe";
+import Priser from "./components/pages/Priser";
+import Kundecases from "./components/pages/Kundecases";
+import Teamet from "./components/pages/Teamet";
+import HvadKunderSiger from "./components/pages/HvadKunderSiger";
+import FAQ from "./components/pages/Faq";
+import Omos from "./components/pages/Omos";
+import Tilvalg from "./components/pages/Tilvalg"; // Korrekt import navn
+import PoleringPriser from "./components/pages/Poleringpriser";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import Nav from "./components/UI/Nav";
