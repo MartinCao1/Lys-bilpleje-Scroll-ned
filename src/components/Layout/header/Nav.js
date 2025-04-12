@@ -27,18 +27,23 @@ function Nav() {
         <img src="/bilag/logo1.png" alt="Logo" className="logo" />
       </Link>
       <ul>
-        <li><Link to="/priser">Priser</Link></li>
-        <li><Link to="/kundecases">Kundecases</Link></li>
-        <li className="dropdown">
-          <Link to="/teamet" className="dropdown-title">Teamet</Link>
-          <ul className="dropdown-menu">
-            <li><Link to="/hvadkundersiger">Hvad siger vores kunder</Link></li>
-            <li><Link to="/omos">Om os</Link></li>
-            <li><Link to="/faq">FAQ</Link></li>
-          </ul>
+        <li>
+          <Link to="/priser">Priser</Link>
         </li>
-        <li><Link to="/anmeldelser">Anmeldelser</Link></li>
-        <li><Link to="/kontakt" className="btn">Kontakt</Link></li>
+        <li>
+          <Link to="/kundecases">Kundecases</Link>
+        </li>
+        <li>
+          <Link to="/teamet">Teamet</Link>
+        </li>
+        <li>
+          <Link to="/anmeldelser">Anmeldelser</Link>
+        </li>
+        <li>
+          <Link to="/kontakt" className="btn">
+            Kontakt
+          </Link>
+        </li>
       </ul>
     </nav>
   );

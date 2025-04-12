@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import "../scss/partials/_tilvalg.scss";
+import "../../scss/partials/_tilvalg.scss";
 
 function Tilvalg() {
   const { pakkenavn } = useParams();

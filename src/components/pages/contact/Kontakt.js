@@ -1,22 +1,6 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 
 function Kontakt() {
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   // Deaktiver scrolling, hvis vi er på kontaktsiden
-  //   if (location.pathname === "/kontakt") {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto"; // Gendan scrolling på andre sider
-  //   }
-
-  //   // Ryd op, når komponenten unmountes
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //   };
-  // }, [location.pathname]);
 
   const [result, setResult] = React.useState("");
 
