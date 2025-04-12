@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
-import Header from "../UI/Header";
-import Footer from "../UI/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 import Sections from "../sections/Sections";
 
 const Layout = () => {

@@ -37,7 +37,7 @@ function Nav() {
             <li><Link to="/faq">FAQ</Link></li>
           </ul>
         </li>
-        <li><Link to="/findos">Find Os</Link></li>
+        <li><Link to="/anmeldelser">Anmeldelser</Link></li>
         <li><Link to="/kontakt" className="btn">Kontakt</Link></li>
       </ul>
     </nav>
