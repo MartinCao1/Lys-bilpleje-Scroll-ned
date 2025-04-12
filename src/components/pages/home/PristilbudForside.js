@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/partials/_pristilbudforside.scss";
+import "../../scss/partials/_pristilbudforside.scss";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";

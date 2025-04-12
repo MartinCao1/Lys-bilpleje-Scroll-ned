@@ -1,6 +1,7 @@
 import React from "react";
-import "../scss/partials/_processsektion.scss"; // Import SCSS-filen
-import { FaWrench } from "react-icons/fa"; // Import FaWrench ikonet
+import "../../scss/partials/_pristilbudforside.scss";
+import "../../scss/partials/_processsektion.scss";
+import { FaWrench } from "react-icons/fa"; 
 
 function ProcessSektion() {
   return (

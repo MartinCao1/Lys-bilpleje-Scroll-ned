@@ -33,24 +33,11 @@ function Nav() {
         <li>
           <Link to="/kundecases">Kundecases</Link>
         </li>
-        <li className="dropdown">
-          <Link to="/teamet" className="dropdown-title">
-            Teamet
-          </Link>
-          <ul className="dropdown-menu">
-            <li>
-              <Link to="/hvadkundersiger">Hvad siger vores kunder</Link>
-            </li>
-            <li>
-              <Link to="/omos">Om os</Link>
-            </li>
-            <li>
-              <Link to="/faq">FAQ</Link>
-            </li>
-          </ul>
+        <li>
+          <Link to="/teamet">Teamet</Link>
         </li>
         <li>
-          <Link to="/findos">Find Os</Link>
+          <Link to="/anmeldelser">Anmeldelser</Link>
         </li>
         <li>
           <Link to="/kontakt" className="btn">
