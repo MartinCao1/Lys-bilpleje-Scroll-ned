@@ -1,10 +1,7 @@
 import React from "react";
 import Mainframe from "./Mainframe";
 import FindOs from "./FindOs";
-import Kontakt from "./Kontakt";
-import Kundecases from "./Kundecases";
-import Teamet from "./Teamet";
-import ProcessSektion from "./ProcessSektion"; // Import den nye komponent
+import ProcessSektion from "./ProcessSektion"; 
 import PristilbudForside from "./PristilbudForside";
 
 function home() {

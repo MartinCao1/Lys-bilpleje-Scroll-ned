@@ -56,32 +56,11 @@ function Nav() {
             Kundecases
           </Link>
         </li>
-        <li className="dropdown">
-          <Link to="/teamet" className="dropdown-title">
-            Teamet
-          </Link>
-          <ul className="dropdown-menu">
-            <li>
-              <Link to="/hvadkundersiger" onClick={() => setMenuOpen(false)}>
-                Hvad siger vores kunder
-              </Link>
-            </li>
-            <li>
-              <Link to="/omos" onClick={() => setMenuOpen(false)}>
-                Om os
-              </Link>
-            </li>
-            <li>
-              <Link to="/faq" onClick={() => setMenuOpen(false)}>
-                FAQ
-              </Link>
-            </li>
-          </ul>
+        <li>
+          <Link to="/teamet">Teamet</Link>
         </li>
         <li>
-          <Link to="/findos" onClick={() => setMenuOpen(false)}>
-            Find Os
-          </Link>
+          <Link to="/anmeldelser">Anmeldelser</Link>
         </li>
         <li>
           <Link

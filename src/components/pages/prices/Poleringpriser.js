@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../scss/partials/_poleringpriser.scss"; // Importér SCSS filen for styling
+import "../../scss/partials/_poleringpriser.scss"; // Importér SCSS filen for styling
 
 function PoleringPriser() {
   return (
