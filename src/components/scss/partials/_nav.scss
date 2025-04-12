@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  // background: #333;
+  background: transparent;
   color: white;
   font-weight: 700;
   padding: 4px 0;
@@ -12,18 +12,26 @@ nav {
   justify-content: space-between;
   z-index: 10;
   box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-nav {
+  background: #557cc3;
 }
 
 .logo {
   width: 160px;
 }
 
-nav ul li {
-  display: inline-block;
+nav ul {
+  display: flex;
   list-style: none;
-  margin: 5px 20px;
-  font-size: 16px;
 }
+
+nav ul li {
+  margin: 5px 20px;
+}
+
 nav ul li a {
   display: inline-block;
   padding: 0.75rem 1rem;
@@ -41,10 +49,6 @@ nav ul li .btn:hover {
   color: #212121; /* Tekstfarve ved hover */
 }
 
-.dark-nav {
-  background: #557cc3;
-  transition: 0.5s;
-}
 .dropdown-title {
   display: inline-flex;
   align-items: center;
@@ -110,5 +114,51 @@ nav ul li .btn:hover {
 }
 
 .mobile-nav {
-  display: none; /* Skjul mobilnav i desktop visning */
+  display: none;
+}
+
+.mobile-nav i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: block; // Vis mobilmenu-knappen
+  }
+
+  .nav-list {
+    display: none; // Skjul menuen som standard
+  }
+
+  .nav-list.active {
+    display: flex; // Vis menuen, når den er aktiv
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    width: 150px;
+    height: 100vh;
+    background-color: #557cc3;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-list.active .mobile-nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
 }

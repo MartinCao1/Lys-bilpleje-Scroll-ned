@@ -45,3 +45,21 @@ a {
   border: 0;
   outline: 0;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 10%;
+  }
+
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}

@@ -15,7 +15,6 @@ function home() {
       <ProcessSektion />{" "}
       {/* Tilføj ProcessSektion her, hvor du ønsker den vist */}
       <PristilbudForside />
-      <FindOs />
     </>
   );
 }
