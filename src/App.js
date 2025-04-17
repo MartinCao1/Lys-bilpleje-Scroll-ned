@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/home/Home";
 import Booking from "./components/pages/home/Booking";
-import FindOs from "./components/pages/home/FindOs";
+import FindOs from "./components/Layout/footer/FindOs";
 import Anmeldelser from "./components/pages/home/Anmeldelser";
 import Kontakt from "./components/pages/contact/Kontakt";
 import Mainframe from "./components/pages/home/Mainframe";
 import Priser from "./components/pages/prices/Priser";
 import Kundecases from "./components/pages/cases/Kundecases";
 import Teamet from "./components/pages/teamet/Teamet";
-import FAQ from "./components/Layout/footer/Faq";
+import FAQ from "./components/Layout/footer/FAQ";
 import Omos from "./components/Layout/footer/Omos";
 import Tilvalg from "./components/pages/prices/Tilvalg"; // Korrekt import navn
 import PoleringPriser from "./components/pages/prices/Poleringpriser";

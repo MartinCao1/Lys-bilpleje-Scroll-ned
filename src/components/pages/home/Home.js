@@ -1,6 +1,5 @@
 import React from "react";
 import Mainframe from "./Mainframe";
-import FindOs from "./FindOs";
 import ProcessSektion from "./ProcessSektion"; 
 import PristilbudForside from "./PristilbudForside";
 

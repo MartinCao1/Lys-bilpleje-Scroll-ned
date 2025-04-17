@@ -1,36 +1,33 @@
-// footer {
-//   background: #292f35;
-//   .footer-title {
-//     position: relative;
-//     margin-bottom: 2rem;
-//     &:after {
-//       content: '';
-//       display: inline-block;
-//       position: absolute;
-//       width: 50px;
-//       height: 2px;
-//       background: #248eff;
-//       top: 30px;
-//     }
-//   }
-//   .bottom-footer {
-//     background-color: #181d21;
-//     color: #6c757d;
-//   }
-//   .quick-links {
-//     list-style-type: none;
-//     padding: 0;
-//     margin: 0;
+/* Apply flexbox to the body and html to ensure full height */
+html, body {
+  height: 100%;  /* Ensure the page takes full height */
+  margin: 0;  /* Remove any default margin */
+}
 
-//     a {
-//       text-decoration: none;
-//       font-size: 0.9rem;
-//       display: inline-block;
-//       padding: 0.3rem 0;
-//       color: #6c757d !important;
-//       &:hover {
-//         color: lighten(#6c757d, 20%) !important;
-//       }
-//     }
-//   }
-// }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensures the footer stays at the bottom */
+}
+
+.main-content {
+  flex-grow: 1;  /* This will make the main content take up all available space */
+}
+
+.footer {
+  background: #557cc3;
+  color: white;
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}

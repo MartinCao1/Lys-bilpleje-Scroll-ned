@@ -1,4 +1,6 @@
 import React from "react";
+import "../../scss/partials/_kundecases.scss";
+
 
 function Kundecases() {
   return (
