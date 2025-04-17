@@ -1,8 +1,9 @@
 import React from "react";
 import Mainframe from "./Mainframe";
 import FindOs from "./FindOs";
-import ProcessSektion from "./ProcessSektion"; 
+import ProcessSektion from "./ProcessSektion";
 import PristilbudForside from "./PristilbudForside";
+import Anmeldelser from "./Anmeldelser";
 
 function home() {
   /* Forældre */
@@ -12,6 +13,7 @@ function home() {
       <ProcessSektion />{" "}
       {/* Tilføj ProcessSektion her, hvor du ønsker den vist */}
       <PristilbudForside />
+      <Anmeldelser />
     </>
   );
 }
