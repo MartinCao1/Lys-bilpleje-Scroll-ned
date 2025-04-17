@@ -1,9 +1,8 @@
-import React from 'react';
-
+import React from "react";
 
 function footer() {
   return (
-    <div className='footer'>
+    <div className="footer">
       <p> JEG ER FOOTER</p>
     </div>
   );
